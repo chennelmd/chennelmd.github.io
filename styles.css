@@ -169,7 +169,7 @@ textarea {
   min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
-  padding-top: 56px;
+  padding-top: 48px;
   background:
     linear-gradient(135deg, rgba(247, 249, 252, 0.92), rgba(255, 255, 255, 0.82)),
     radial-gradient(circle at 12% 18%, rgba(36, 166, 168, 0.18), transparent 30%),
@@ -179,7 +179,7 @@ textarea {
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 56px;
+  gap: 64px;
   align-items: center;
 }
 
@@ -210,8 +210,8 @@ h3 {
 }
 
 h1 {
-  max-width: 760px;
-  font-size: clamp(3rem, 9vw, 6rem);
+  max-width: 700px;
+  font-size: clamp(3rem, 7.4vw, 5.35rem);
 }
 
 h2 {
@@ -223,7 +223,7 @@ h3 {
 }
 
 .hero-subtitle {
-  max-width: 690px;
+  max-width: 650px;
   margin: 24px 0 0;
   color: #455268;
   font-size: clamp(1.04rem, 2.4vw, 1.25rem);
@@ -270,9 +270,10 @@ h3 {
 
 .hero-visual {
   position: relative;
-  min-height: 480px;
+  min-height: 540px;
   display: grid;
   align-items: center;
+  padding: 42px 18px 48px;
 }
 
 .visual-panel {
@@ -283,7 +284,7 @@ h3 {
 }
 
 .visual-panel-main {
-  padding: 18px;
+  padding: 20px;
 }
 
 .panel-top {
@@ -450,9 +451,9 @@ h3 {
 }
 
 .visual-panel-small {
-  right: -8px;
-  bottom: 28px;
-  width: min(270px, 72%);
+  right: 0;
+  bottom: -12px;
+  width: min(276px, 72%);
 }
 
 .visual-panel-small p,
@@ -484,9 +485,9 @@ h3 {
 }
 
 .visual-panel-note {
-  left: -8px;
-  top: 28px;
-  width: min(260px, 70%);
+  left: 0;
+  top: 0;
+  width: min(300px, 72%);
 }
 
 .visual-panel-note span {
@@ -831,7 +832,7 @@ details p {
 
 @media (min-width: 760px) {
   .hero-grid {
-    grid-template-columns: 1fr minmax(360px, 0.8fr);
+    grid-template-columns: minmax(0, 0.95fr) minmax(400px, 0.85fr);
   }
 
   .service-grid {
